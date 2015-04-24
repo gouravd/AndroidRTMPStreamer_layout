@@ -14,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import android.app.Dialog;
@@ -21,14 +22,14 @@ import android.app.Dialog;
 public class MainActivity2 extends Activity {
     private RadioGroup radioGroup;
 
-    Button  BtnSetting;
+    TextView BtnSetting;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        BtnSetting = (Button) findViewById(R.id.setting);
+        BtnSetting = (TextView) findViewById(R.id.setting);
 
 
         BtnSetting.setOnClickListener(new OnClickListener() {

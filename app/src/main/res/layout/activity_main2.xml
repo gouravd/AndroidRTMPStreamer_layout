@@ -8,12 +8,16 @@
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#3C989E">
+        android:orientation="horizontal">
 
-        <Button
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtStatus"
+            android:gravity="center"
             android:layout_width="50dp"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/switchcamera" />
 
         <LinearLayout
             android:layout_weight="1"
@@ -22,11 +26,11 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <include layout="@layout/shard" />
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<include layout="@layout/shard" />-->
+        <!--</LinearLayout>-->
     </LinearLayout>
 
     <LinearLayout
@@ -34,33 +38,35 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_vertical"
-        android:background="#8AD503"
         android:orientation="vertical">
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+        <!--<Button-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="right" />-->
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:drawableTop="@drawable/cma3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="right" />
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="right" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="right" />
+        <!--<Button-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="right" />-->
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F45145"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:drawableTop="@drawable/settings"
             android:id="@+id/setting"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -79,6 +85,7 @@
             android:layout_gravity="bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <include layout="@layout/information" />
         </LinearLayout>
     </LinearLayout>
